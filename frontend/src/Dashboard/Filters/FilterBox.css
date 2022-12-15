@@ -1,0 +1,67 @@
+.filter-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.filter-container .title {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.filter-container .search-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-container .search-button .btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-bold);
+  color: var(--clr-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-container .table {
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border: 0.1rem solid var(--clr-para);
+}
+.filter-container .pageNo {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.filter-container .pageNo .count {
+  border: 1px solid var(--clr-para);
+  height: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--clr-para);
+  color: var(--clr-primary);
+}
+.filter-container .pageNo .btn {
+  border: 1px solid var(--clr-para);
+  height: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--clr-bold);
+  color: var(--clr-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,103 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15rem;
+  border: 0.1rem solid var(--clr-para);
+  border-radius: 1rem;
+  padding: 0.6rem;
+  background-color: var(--bg-primary);
+  position: relative;
+}
+.box .label {
+  margin-bottom: 0.5rem;
+}
+.box .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  padding-right: 20%;
+}
+.box .value i,
+.box .popup .search i {
+  font-size: 2rem;
+  background-color: var(--clr-primary);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box .popup {
+  background-color: var(--bg-primary);
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 15rem;
+  border: 0.1rem solid var(--clr-para);
+  border-radius: 1rem;
+  z-index: 10;
+  min-height: 8rem;
+}
+.box .popup .search {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  position: relative;
+  margin-top: 1rem;
+}
+.box .popup .search input {
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--clr-para);
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 25%;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.box .popup .search input::placeholder {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.box .popup .search i {
+  background-color: var(--bg-primary);
+  right: 10%;
+  font-size: 1rem;
+}
+.box .popup .option {
+  margin-top: 1rem;
+  overflow: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+.box .popup .option h4 {
+  text-transform: capitalize;
+  width: 80%;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+.box .popup .option h4:hover {
+  background-color: var(--clr-primary);
+}
