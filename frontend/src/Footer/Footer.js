@@ -7,7 +7,7 @@ const Footer = () => {
         <h5>
           Copyright 2022 &#174;{' '}
           <a
-            href="https://tushar-pethkar-portfolio.netlify.app/"
+            href="https://portfolio-tushar.vercel.app/"
             target="_blank"
             style={{ textDecoration: 'underline' }}
           >

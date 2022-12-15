@@ -32,6 +32,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   border: 0.1rem solid var(--clr-para);
+  padding: 1rem 0;
 }
 .filter-container .pageNo {
   display: flex;
